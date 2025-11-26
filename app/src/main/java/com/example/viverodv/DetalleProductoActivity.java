@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import com.example.viverodv.model.Producto;
+import com.example.viverodv.utils.GestorCarrito;
 
 public class DetalleProductoActivity extends AppCompatActivity {
 
@@ -46,6 +47,13 @@ public class DetalleProductoActivity extends AppCompatActivity {
                     .centerCrop()
                     .into(img);
 
+            btnAgregar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    GestorCarrito.getInstance().agregarProducto(producto);
+                    Toast.makeText(DetalleProductoActivity.this, R.string.mje_agregado_ok, Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }
