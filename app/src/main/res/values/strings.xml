@@ -9,7 +9,7 @@
     <string name="titulo">Alta de nuevos productos</string>
 
     <!-- Main/Home -->
-    <string name="saludo">Bienvenido!</string>
+    <string name="saludo">¡Bienvenido!</string>
     <string name="btn_catalogo">Ver Catálogo</string>
     <string name="btn_carrito">Ver Carrito</string>
 

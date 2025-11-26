@@ -14,10 +14,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="32dp"
-        android:paddingBottom="8dp"
-        android:paddingStart="@dimen/main_padding"
-        android:paddingEnd="@dimen/main_padding"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -40,7 +40,7 @@
                 android:layout_gravity="center"
                 android:text="@string/saludo"
                 android:textColor="@color/emerald_800"
-                android:textSize="@dimen/text_large"
+                android:textSize="@dimen/text_xlarge"
                 android:textStyle="bold" />
         </FrameLayout>
 

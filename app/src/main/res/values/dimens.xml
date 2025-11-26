@@ -1,7 +1,12 @@
 <resources>
     <!-- General -->
-    <dimen name="fab_margin">16dp</dimen>
+    <!-- <dimen name="fab_margin">16dp</dimen> -->
     <dimen name="main_padding">16dp</dimen>
+
+    <!-- Header -->
+    <dimen name="header_padding">12dp</dimen>
+    <dimen name="header_margin">16dp</dimen>
+    <dimen name="header_logo">48dp</dimen>
 
     <!-- Tarjeta de producto -->
     <dimen name="card_margin">8dp</dimen>
@@ -12,6 +17,7 @@
     <dimen name="text_small">18sp</dimen>
     <dimen name="text_medium">24sp</dimen>
     <dimen name="text_large">32sp</dimen>
+    <dimen name="text_xlarge">40sp</dimen>
 
     <!-- Img -->
     <dimen name="img_small">80dp</dimen>
