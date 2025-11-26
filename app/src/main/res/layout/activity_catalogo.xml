@@ -10,7 +10,7 @@
 
     <!-- Contenedor principal en vertical -->
     <LinearLayout
-        android:id="@+id/main_content"
+        android:id="@+id/catalogo_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
