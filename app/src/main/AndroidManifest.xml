@@ -36,6 +36,10 @@
             android:name=".CarritoActivity"
             android:exported="false"
             android:theme="@style/Theme.ViveroDV" />
+        <activity
+            android:name=".PagoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ViveroDV" />
     </application>
 
 </manifest>

@@ -26,6 +26,10 @@
     <string name="mje_producto_eliminado">Producto eliminado</string>
     <string name="vaciar_carrito">Vaciar carrito</string>
     <string name="mje_carrito_vaciado">Carrito vaciado</string>
+    <string name="ir_a_pago">Ir a Pago</string>
+
+    <!-- Pago -->
+    <string name="seccion_pago">En desarrollo...</string>
 
     <!-- Formulario -->
     <string name="placeholder_nombre">Nombre</string>

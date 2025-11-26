@@ -36,8 +36,17 @@ public class CarritoActivity extends AppCompatActivity {
         contenedor = findViewById(R.id.contenedor_carrito);
         precioText = findViewById(R.id.precio_total);
         Button btnVaciarCarrito = findViewById(R.id.btn_vaciar_carrito);
+        Button btnIrAPago = findViewById(R.id.btn_ir_a_pago);
 
         actualizarCarrito();
+
+        btnIrAPago.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CarritoActivity.this, PagoActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnVaciarCarrito.setOnClickListener(new View.OnClickListener() {
             @Override

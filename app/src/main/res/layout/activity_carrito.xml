@@ -73,6 +73,18 @@
                     android:gravity="end" />
 
                 <Button
+                    android:id="@+id/btn_ir_a_pago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/main_btn_margin"
+                    android:layout_marginEnd="@dimen/main_btn_margin"
+                    android:layout_marginBottom="@dimen/main_margin"
+                    android:text="@string/ir_a_pago"
+                    android:textSize="@dimen/text_small"
+                    android:backgroundTint="@color/emerald_800"
+                    android:textColor="@color/white" />
+
+                <Button
                     android:id="@+id/btn_vaciar_carrito"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
