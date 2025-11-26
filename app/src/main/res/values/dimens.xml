@@ -3,6 +3,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="main_padding">16dp</dimen>
     <dimen name="main_margin">16dp</dimen>
+    <dimen name="main_margin_small">6dp</dimen>
     <dimen name="main_btn_margin">24dp</dimen>
     
     <!-- Header -->
@@ -10,7 +11,7 @@
     <dimen name="header_margin">16dp</dimen>
     <dimen name="header_logo">48dp</dimen>
     
-    <!-- Tarjeta de producto -->
+    <!-- Tarjeta -->
     <dimen name="card_margin">16dp</dimen>
     <dimen name="card_vertical_margin">18dp</dimen>
     <dimen name="card_horizontal_margin">32dp</dimen>
