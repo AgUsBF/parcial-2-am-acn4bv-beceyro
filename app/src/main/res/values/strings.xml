@@ -19,6 +19,14 @@
     <string name="mje_agregado_ok">Producto agregado al carrito</string>
     <string name="ver_mas">Ver más</string>
 
+    <!-- Carrito -->
+    <string name="titulo_carrito">Tu Carrito</string>
+    <string name="total">Total:</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="mje_producto_eliminado">Producto eliminado</string>
+    <string name="vaciar_carrito">Vaciar carrito</string>
+    <string name="mje_carrito_vaciado">Carrito vaciado</string>
+
     <!-- Formulario -->
     <string name="placeholder_nombre">Nombre</string>
     <string name="placeholder_tipo">Tipo</string>

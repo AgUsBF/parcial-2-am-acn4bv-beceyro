@@ -10,7 +10,7 @@
 
     <!-- Contenedor principal en vertical -->
     <LinearLayout
-        android:id="@+id/main_content"
+        android:id="@+id/carrito_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -25,24 +25,52 @@
         <!-- HEADER -->
         <include layout="@layout/layout_base_header" />
 
-        <!-- CONTENIDO HOME -->
-        <FrameLayout
-            android:id="@+id/carrito_content"
+        <!-- CONTENIDO CARRITO -->
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_height="match_parent"
+            tools:context=".CarritoActivity">
 
-            <TextView
-                android:id="@+id/saludo"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="CARRITO DE COMPRAS"
-                android:textColor="@color/emerald_800"
-                android:textSize="@dimen/text_large"
-                android:textStyle="bold" />
-        </FrameLayout>
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_carrito"
+                    android:textSize="@dimen/text_large"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/contenedor_carrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/precio_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"
+                    android:gravity="end" />
+
+                <Button
+                    android:id="@+id/btn_vaciar_carrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vaciar_carrito"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
