@@ -22,108 +22,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- HEADER: Logo y título -->
-        <LinearLayout
-            android:id="@+id/header_container"
+        <!-- HEADER -->
+        <include layout="@layout/layout_base_header" />
+
+        <!-- CONTENIDO HOME -->
+        <FrameLayout
+            android:id="@+id/home_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp">
 
-            <!-- Logo -->
-            <ImageView
-                android:id="@+id/header_image"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/flower_pot"
-                android:contentDescription="@string/logo_alt_txt"
-                android:layout_marginEnd="16dp" />
-
-            <!-- Nombre del vivero -->
             <TextView
-                android:id="@+id/nombre_vivero"
+                android:id="@+id/saludo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nombre_vivero"
+                android:layout_gravity="center"
+                android:text="@string/saludo"
                 android:textColor="@color/emerald_800"
-                android:textStyle="bold"
-                android:textSize="32sp"
-                android:fontFamily="sans-serif-medium" />
-        </LinearLayout>
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+        </FrameLayout>
 
-        <!-- FORMULARIO-->
-
-        <!-- Titulo -->
-        <TextView
-            android:id="@+id/titulo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:fontFamily="sans-serif-medium"
-            android:text="@string/titulo"
-            android:textColor="@color/emerald_800"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <!-- Campo nombre -->
-        <EditText
-            android:id="@+id/editTextPlantName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:backgroundTint="@color/emerald_800"
-            android:hint="@string/placeholder_nombre"
-            android:inputType="textPersonName"
-            android:textColorHint="@color/emerald_800"
-            tools:minHeight="50dp" />
-
-        <!-- Campo tipo (Dropdown) -->
-        <AutoCompleteTextView
-            android:id="@+id/editTextPlantType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:backgroundTint="@color/emerald_800"
-            android:drawableEnd="@drawable/ic_arrow_drop_down"
-            android:dropDownWidth="match_parent"
-            android:dropDownHeight="wrap_content"
-            android:gravity="center_vertical"
-            android:hint="@string/placeholder_tipo"
-            android:inputType="none"
-            android:minHeight="50dp"
-            android:paddingEnd="6dp"
-            android:textColorHint="@color/emerald_800" />
-
-        <!-- Campo precio -->
-        <EditText
-            android:id="@+id/editTextPlantPrice"
+        <Button
+            android:id="@+id/btn_catalogo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:backgroundTint="@color/emerald_800"
-            android:hint="@string/placeholder_precio"
-            android:inputType="numberDecimal"
-            android:minHeight="50dp"
-            android:textColorHint="@color/emerald_800" />
-
-        <!-- Botón -->
-        <Button
-            android:id="@+id/buttonAddProduct"
+            android:text="@string/btn_catalogo"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/white" />
+            
+            <Button
+            android:id="@+id/btn_cart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_agregar"
             android:backgroundTint="@color/emerald_800"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_marginBottom="16dp" />
+            android:text="@string/btn_carrito"
+            android:textSize="@dimen/text_medium"
+            android:textColor="@color/white" />
 
-        <!-- Contenedor de tarjetas de producto -->
-        <LinearLayout
-            android:id="@+id/products_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,11 @@
     <string name="logo_alt_txt">Logo del vivero</string>
     <string name="titulo">Alta de nuevos productos</string>
 
+    <!-- Main/Home -->
+    <string name="saludo">Bienvenido!</string>
+    <string name="btn_catalogo">Ver Catálogo</string>
+    <string name="btn_carrito">Ver Carrito</string>
+
     <!-- Formulario -->
     <string name="placeholder_nombre">Nombre</string>
     <string name="placeholder_tipo">Tipo</string>
