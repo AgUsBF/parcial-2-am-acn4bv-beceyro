@@ -24,7 +24,8 @@ public class DetalleProductoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_producto);
 
-        
+        // TODO : Revisar el medoto deprecado
+        @SuppressWarnings("deprecation")
         Producto producto = (Producto) getIntent().getSerializableExtra("producto");
         
         TextView saludo = findViewById(R.id.saludo);
