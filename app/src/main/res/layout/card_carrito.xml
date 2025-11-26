@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="2dp">
+    android:layout_marginTop="@dimen/card_vertical_margin_small"
+    android:layout_marginBottom="@dimen/card_vertical_margin_small"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +24,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginEnd="@dimen/card_margin"
             android:orientation="vertical">
 
             <TextView
@@ -29,14 +33,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre Planta"
-                android:textSize="@dimen/text_medium"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/emerald_800"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/precio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$0.00" />
+                android:text="$0.00"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/emerald_800"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -44,10 +52,11 @@
             android:id="@+id/btn_eliminar_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/card_margin"
             android:text="@string/eliminar"
             android:backgroundTint="@android:color/holo_red_light"
             android:textColor="@color/white"
-            android:textSize="12sp"/>
+            android:textSize="@dimen/text_xsmall"/>
 
     </LinearLayout>
 

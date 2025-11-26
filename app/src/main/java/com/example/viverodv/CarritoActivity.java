@@ -71,7 +71,7 @@ public class CarritoActivity extends AppCompatActivity {
 
             Glide.with(this)
                     .load(producto.getUrlImagen())
-                    .centerCrop()
+                    .fitCenter()
                     .into(img);
 
             btnEliminarItem.setOnClickListener(new View.OnClickListener() {

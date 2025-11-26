@@ -13,12 +13,14 @@
     
     <!-- Tarjeta -->
     <dimen name="card_margin">16dp</dimen>
+    <dimen name="card_vertical_margin_small">8dp</dimen>
     <dimen name="card_vertical_margin">18dp</dimen>
     <dimen name="card_horizontal_margin">32dp</dimen>
     <dimen name="card_radius">12dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
     
     <!-- Texto-->
+    <dimen name="text_xsmall">12sp</dimen>
     <dimen name="text_small">18sp</dimen>
     <dimen name="text_medium">24sp</dimen>
     <dimen name="text_large">32sp</dimen>
